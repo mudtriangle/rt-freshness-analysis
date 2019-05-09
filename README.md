@@ -1,7 +1,7 @@
 # Rotten Tomatoes Freshness Analysis
 A LSTM sentiment analysis on Rotten Tomatoes reviews. It identifies reviews between **Fresh**, meaning a positive review, and **Rotten**, meaning a negative one.
 ## Data
-The data is obtained from the subreddit `r/datasets`, thanks to `u/nicolas-gervais` by scraping the Rotten Tomatoes website. It consists of 480000 reviews, 240000 Fresh and 240000 Rotten ones. There are two columns, the first consisting on `0` meaning Rotten or `1` meaning Fresh and the second consisting on the text of the review itself. The dataset can be found [here](https://drive.google.com/file/d/1N8WCMci_jpDHwCVgSED-B9yts-q9_Bb5/view?usp=sharing).\
+The data is obtained from the subreddit `r/datasets`, thanks to `u/nicolas-gervais` by scraping the Rotten Tomatoes website. It consists of 480 thousand reviews, 240 thousand Fresh and 240 thousand Rotten ones. There are two columns, the first consisting on `0` meaning Rotten or `1` meaning Fresh and the second consisting on the text of the review itself. The dataset can be found [here](https://drive.google.com/file/d/1N8WCMci_jpDHwCVgSED-B9yts-q9_Bb5/view?usp=sharing).\
 Sample of the data:
 
 Freshness | Review
