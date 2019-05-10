@@ -33,4 +33,4 @@ Freshness | Review
 `train.py` Python file that creates an instance of the model and trains it.
 ## Acknowledgements
 Dataset obtained thanks to `u/nicolas-gervais` from the `r/datasets` subreddit.\
-Done roughly following Samarth Agrawal's tutorial on LSTM Sentiment Analysis in towardsdatascience.com that can be found [here](https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948).
+Done roughly following Samarth Agrawal's tutorial on LSTM Sentiment Analysis in `towardsdatascience.com` that can be found [here](https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948).
