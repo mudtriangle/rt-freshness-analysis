@@ -64,6 +64,8 @@ def build_vocab(sentences_tokens, filename):
 def get_numbers(word_tokens, vocab):
     numbers = []
     for word in word_tokens:
+        if word not in vocab.keys():
+            continue
         numbers.append(vocab[word])
 
     return numbers
