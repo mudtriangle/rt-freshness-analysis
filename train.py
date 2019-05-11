@@ -12,7 +12,6 @@ import data_utils as du
 # Constants
 TRAIN_SPLIT = 0.8
 BATCH_SIZE = 64
-DROP_PROB = 0.5
 LEARNING_RATE = 1e-3
 EPOCHS = 10
 
@@ -29,14 +28,8 @@ train_loader, test_loader, validate_loader = du.make_loaders(data, labels, BATCH
 # Get the size of the vocabulary.
 vocab_size = du.get_vocab_size("vocabulary.txt")
 
-# Parameters for the network.
-output_size = 1
-embedding_dim = 400
-hidden_dim = 256
-num_layers = 2
-
 # Build network.
-network = lstm.LSTMSentiment(vocab_size, output_size, embedding_dim, hidden_dim, num_layers, DROP_PROB)
+network = lstm.LSTMSentiment(vocab_size)
 criterion = nn.BCELoss()
 optimizer = torch.optim.Adam(network.parameters(), lr=LEARNING_RATE)
 counter = 0

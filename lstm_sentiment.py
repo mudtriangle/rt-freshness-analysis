@@ -1,10 +1,17 @@
 # External libraries
 import torch.nn as nn
 
+# Modifiable variables for the model.
+output_size = 1
+embedding_dim = 400
+hidden_dim = 256
+layers = 2
+drop_prob = 0.5
+
 
 # Class for the model.
 class LSTMSentiment(nn.Module):
-    def __init__(self, vocab_size, output_size, embedding_dim, hidden_dim, layers, drop_prob):
+    def __init__(self, vocab_size):
         super().__init__()
 
         self.output_size = output_size
