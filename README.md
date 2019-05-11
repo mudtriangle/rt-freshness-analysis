@@ -30,7 +30,8 @@ Freshness | Review
 `prepare_data.py` Python file that converts all the text reviews in the original dataset to number tokens.\
 `lstm_sentiment.py` Python file containing the class declaration of the model used.\
 `data_utils.py` Python file containing functions that help in processing the data to serve as input for the model to be trained.\
-`train.py` Python file that creates an instance of the model and trains it.
+`train.py` Python file that creates an instance of the model and trains it.\
+`predict.py` Python file that loads `model` file (not included in the repo, output of `train.py`) and uses it to predict a sentence given by the user.
 ## Acknowledgements
 Dataset obtained thanks to `u/nicolas-gervais` from the `r/datasets` subreddit.\
 Done roughly following Samarth Agrawal's tutorial on LSTM Sentiment Analysis in `towardsdatascience.com` that can be found [here](https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948).
